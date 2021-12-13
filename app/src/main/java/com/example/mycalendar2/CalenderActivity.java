@@ -1,37 +1,33 @@
 package com.example.mycalendar2;
 
 import android.os.Bundle;
+import android.widget.CheckBox;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class ListActivity extends AppCompatActivity {
-
+public class CalenderActivity extends AppCompatActivity {
     DBHelper dbHelper;
-    TextView textTitle, txtContent;
-    ListView memoList;
+    ListView listCheck;
+    CheckBox checkBox;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list);
+        setContentView(R.layout.activity_calender);
+        //바 숨김
         getSupportActionBar().hide();
 
-        textTitle= findViewById(R.id.txtTitleList);
-        txtContent = findViewById(R.id.txtContentList);
+        listCheck = findViewById(R.id.listCheck);
+        checkBox = findViewById(R.id.checkBox);
 
-        //리스트 보여주는 화면
         dbHelper = new DBHelper(getApplicationContext());
         ArrayList<MemoVO> list = MemoDAO.selectAll(dbHelper);
-
-        memoList = findViewById(R.id.memoList);
-
-        MemoAdapter adapter = new MemoAdapter(list);
-        memoList.setAdapter(adapter);
+        CalenderAdapter calenderAdapter = new CalenderAdapter(list);
+        listCheck.setAdapter(calenderAdapter);
 
     }
 }

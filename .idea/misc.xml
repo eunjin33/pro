@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/drawable/border.xml" value="0.378125" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/drawable/button_background.xml" value="0.3723076923076923" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/drawable/style.xml" value="0.13240740740740742" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_calender.xml" value="0.33" />
-        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_list.xml" value="0.33" />
-        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_list.xml" value="0.25" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/activity_write.xml" value="0.25" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/cativity_list.xml" value="0.11423505572441743" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/fragment_first.xml" value="0.11574074074074074" />
         <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/fragment_second.xml" value="0.22" />
-        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/listview_item.xml" value="0.22" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/listview_calender.xml" value="0.33" />
+        <entry key="..\:/dev/MyCalendar2/app/src/main/res/layout/listview_item.xml" value="0.33" />
       </map>
     </option>
   </component>

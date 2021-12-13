@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     Button btnList, btnCal;
-    FloatingActionButton btnAdd;
+    ImageButton btnadd;
 
     DBHelper dbHelper;
 
@@ -21,14 +22,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+
         btnList = findViewById(R.id.btnList);
         btnCal = findViewById(R.id.btnCal);
-        btnAdd = findViewById(R.id.btnAdd);
+        btnadd = findViewById(R.id.btnadd);
 
 
 
         //메인에서 +버튼 누르면 습관 등록 페이지로 이동
-        btnAdd.setOnClickListener(v->{
+        btnadd.setOnClickListener(v->{
             Intent intent = new Intent(getApplicationContext(), WriteActivity.class);
             startActivityForResult(intent,1);
         });
@@ -42,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
         //메인에서 달력 누르면 달력 이동
         btnCal.setOnClickListener(v->{
-
+            Intent intent = new Intent(getApplicationContext(), CalenderActivity.class);
+            startActivityForResult(intent,3);
         });
 
     }

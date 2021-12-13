@@ -14,9 +14,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public void onCreate(SQLiteDatabase db) {
         String sql = "create table if not exists memo("
+                + " id integer PRIMARY KEY autoincrement, "
                 + " title text, "
                 + " content text)";
-                //+ " img text)";
         db.execSQL(sql);
         sql = "insert into memo (title,content) values ('책 읽기', '하루에 30분 책 읽기')";
         db.execSQL(sql);

@@ -1,9 +1,17 @@
 package com.example.mycalendar2;
 
 public class MemoVO {
+    String id;
     String title;
     String content;
-    String img;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getTitle() {
         return title;
@@ -19,13 +27,5 @@ public class MemoVO {
 
     public void setContent(String content) {
         this.content = content;
-    }
-
-    public String getImg() {
-        return img;
-    }
-
-    public void setImg(String img) {
-        this.img = img;
     }
 }

@@ -8,66 +8,65 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="385dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="131dp"
+        android:layout_width="351dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/border"
+        android:gravity="center"
         android:text="습관으로 만들고 싶은 것을 등록해주세요"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtContent"
+        app:layout_constraintBottom_toTopOf="@+id/txtTitleList"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtTitle"
-        android:layout_width="237dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="28dp"
+        android:id="@+id/txtTitleList"
+        android:layout_width="353dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
         android:ems="10"
-        android:hint="ex)매일 운동하기 "
+        android:hint=" ex)운동하기 "
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/txtContent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.362"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/txtContent"
-        android:layout_width="291dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:hint="ex)매일 30분씩 걷기 "
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/imgView"
+        app:layout_constraintBottom_toTopOf="@+id/txtContentList"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imgView"
-        android:layout_width="317dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="180dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/txtContentList"
+        android:layout_width="348dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint=" ex)매일 30분씩 걷기 "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtContent"
-        app:srcCompat="@android:drawable/ic_menu_crop" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleList" />
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="342dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="302dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button_background"
         android:text="등록"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContentList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

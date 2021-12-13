@@ -6,41 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAdd"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="142dp"
-        android:layout_marginBottom="65dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/btnCal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/btnList"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/plus"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
     <Button
         android:id="@+id/btnList"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="36dp"
-        android:text="습관 리스트"
-        app:layout_constraintBaseline_toBaselineOf="@+id/btnCal"
+        android:layout_width="156dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_background"
+        android:text="목록"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnCal"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
 
     <Button
         android:id="@+id/btnCal"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="400dp"
+        android:layout_width="151dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/button_background"
         android:text="일정"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FDFBFB"
+        android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnList"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+        app:layout_constraintStart_toEndOf="@+id/btnList" />
+
+    <ImageButton
+        android:id="@+id/btnadd"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="344dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toTopOf="@+id/btnList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/com" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
